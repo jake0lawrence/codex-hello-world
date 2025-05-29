@@ -16,3 +16,4 @@ source .venv/bin/activate
 black src tests
 ruff check src tests
 pytest
+```
