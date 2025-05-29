@@ -1,7 +1,10 @@
-# BAD CODE on purpose 🚨
-def  greet(name =  "World"):
-  print(   f"hello, { name  }!"   )
-  return "hello "  +name.lower()
+"""A simple greeting module."""
 
-if __name__ == "__main__":
- print( greet(  "Jake") )
+
+def greet(name: str = "World") -> str:
+    """Return a capitalized greeting for the provided name."""
+    return f"Hello, {name.title()}!"
+
+
+if __name__ == "__main__":  # pragma: no cover
+    print(greet("Jake"))
